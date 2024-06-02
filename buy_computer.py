@@ -15,10 +15,15 @@ computer_parts = []
 
 while current_choice != '0':
      if current_choice in valid_choices:
-          print("adding {}".format(current_choice))
           index = int(current_choice ) - 1
           chosen_part = available_parts[index]
-          computer_parts.append(chosen_part)
+          if chosen_part in computer_parts:
+               print("removing {}".format(current_choice))
+               computer_parts.remove(chosen_part)
+          else:
+               print("adding {}".format(current_choice))
+               computer_parts.append(chosen_part)
+          print("You're current list contains: {} ".format(computer_parts))     
      else:
         print("Please add items from the list below:")
         for number,part in enumerate(available_parts):
