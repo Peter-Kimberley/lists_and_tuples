@@ -10,5 +10,20 @@ print(in_order)
 
 numbered_list.sort()
 print(numbered_list)
-missing_letter = sorted("The quick brown fox jumps over the lazy dog")
+missing_letter = sorted("The quick brown fox jumps over the lazy dog",
+                        key=str.casefold)
 print(missing_letter)
+
+
+names = ["Graham", 
+         "John",
+         "terry", 
+         "eric",
+         "Terry",
+         "michael"
+         ]
+# key=str.casefold allows us to place in aphabetical order regardles
+# of upper or lower case, otherwise all the capitals would print first 
+names.sort(key=str.casefold)
+print(names)
+

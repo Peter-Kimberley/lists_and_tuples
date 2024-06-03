@@ -1,17 +1,20 @@
 
-computer_parts = ["computer", 
-                   "mouse", 
-                  "keyboard",  
-                   "monitor"
-                   ]
+colours = ["Green", 
+           "Pink", 
+           "Yellow",  
+            "Red",
+            "Blue",
+            "Orange",
+            "Brown",
+            "Red",
+            "Violte",
+            "Black"
+            ]
+print(colours)
 
-for i in computer_parts:
-      print(i)
-print()
+#colours[1] = "Magenta"
+print(colours[3: ])
 
-print(computer_parts[2])
-print()
-print(computer_parts[0:3])
-print()
-print(computer_parts[-1]) # This is a good way to return the last value
-                         # in a list
+colours[3: ] = ["Cyan"]
+print(colours)
+
