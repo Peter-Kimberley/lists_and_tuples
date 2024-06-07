@@ -23,7 +23,7 @@ for index, value in enumerate(data):
         stop = index
         break
     
-print(stop)
+# print(stop)
 del data[:stop]
 print (data)
 
