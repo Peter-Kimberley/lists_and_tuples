@@ -16,9 +16,10 @@ flowers = [
 
 seperator = " , "
 output = seperator.join(flowers)
+# used to print the output of the code
 print(output)
 
 print(" : ".join(flowers))
 
 
- 
+
